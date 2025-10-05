@@ -38,8 +38,8 @@ jobs:
 
             script: |
               docker pull asomaaroufiniyaa/node_app:latest
-              docker stop my-website || true
-              docker rm my-website || true
-              docker run -d -p 3000:3000 --name my-site asomaaroufiniyaa/node_app:latest
+              docker stop node_app || true
+              docker rm node_app || true
+              docker run -d -p 3000:3000 --name node asomaaroufiniyaa/node_app:latest
           
             
