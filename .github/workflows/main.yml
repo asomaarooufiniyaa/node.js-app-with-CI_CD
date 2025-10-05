@@ -48,6 +48,6 @@ jobs:
               docker pull asomaaroufiniyaa/node_app:latest
               docker stop my-website || true
               docker rm my-website || true
-              docker run -d -p 2020:80 --name my-site asomaaroufiniyaa/node_app:latest
+              docker run -d -p 3000:3000 --name my-site asomaaroufiniyaa/node_app:latest
           
             
